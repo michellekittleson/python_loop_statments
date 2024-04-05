@@ -21,6 +21,25 @@ for genre in genres:
 # Convert the for loop from Task 1 into a while loop. Ensure it performs the same function but
 # also includes a condition to stop the loop if a certain genre is played for instance Hip-hop.
 
+genres = ["Jazz", "Rock", "Hip-hop", "Classical"]
+
+track_num = 0
+
+stop_play = False
+
+while stop_play == False:
+    if genres[track_num] == "Hip-hop":
+        print("We don't do Hip-hop in this house!")
+        stop_play = True
+    else:
+        print(f"{genres[track_num]} is playing.")
+    track_num += 1
+
+#     for genre in genres:
+#         if genre == "Hip-hop":
+#             stop_play = True
+#             break
+#         print(f"We are now playing {genre} music.")
 
 
 # Task 3: Light Show Technician Loop
@@ -28,3 +47,9 @@ for genre in genres:
 # the track number and a message that the light show is ready. Modify the loop to skip a genre if
 # it's not suitable for the light show, for instance Classical genre.
 
+genres = ["Jazz", "Rock", "Hip-hop", "Classical"]
+for i in range(len(genres)):
+    if genres[i] == "Classical" or genres[i] == "Jazz":
+        print("There's no light show for this!")
+    else: 
+        print(f"The light show is ready for Track number {i + 1}, it is a {genres[i]} show!")        

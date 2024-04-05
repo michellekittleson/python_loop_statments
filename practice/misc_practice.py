@@ -1,4 +1,7 @@
-genres = ["Jazz", "Rock", "Hip-hop", "Classical"]
-track = genres.index
+n =  range(1, 11)
+numbers = list(n)
 
-print(track)
+for n in reversed(numbers):
+    print(n)
+
+print("The beat drops now!")
